@@ -1,6 +1,6 @@
 # 🙋‍♂️ Projeto SOLID e Clean Architecture
 
-Neste repositório encontra-se o projeto criado na aula [SOLID + Clean Architecture: Projeto completo com NodeJS, Typescript, Express e Prisma](https://youtu.be/RY0BQV803UU) do [Doutorwaka](https://www.youtube.com/@doutorwaka).
+Neste repositório encontra-se o projeto criado na aula [SOLID + Clean Architecture: Projeto completo com NodeJS, Typescript, Express e Prisma](https://youtu.be/vkcTw9jgDTw) do [Doutorwaka](https://www.youtube.com/@doutorwaka).
 
 No projeto, desenvolveremos uma ***API Rest*** que possibilitará o cadastro de produtos bem como ações de venda e de compra deste mesmo produto diminuindo ou aumentando o estoque respectivamente. Será possível também listar todos os produtos cadastrados.
 
@@ -20,8 +20,8 @@ A ***Clean Architecture*** é um conjunto de práticas e técnicas que visam fac
 
 - **Domain** (Domínio) - Camada mais interna, onde se encontra as regras de negócio do sistema. Ela deve ser totalmente agnóstica em relação a qualquer tecnologia/infraestrutura.
 - **Use Cases** (Casos de Uso) - Camada intermediária, que faz a orquestração do fluxo de dados entre a camada de domínio e a camada de infraestrutura. Cada caso de uso é uma intenção do usuário.
-- **Infraestrutura** (Infra-estrutura) - Terceira camada, onde se encontram as implementações concretas das interfaces definidas na camada de domínio. Ela é responsável por lidar com detalhes de tecnologia e é a única camada que pode depender de frameworks e bibliotecas.
-- **External Interface** (Interface externa) - Camada mais externa, na qual usualmente não temos acesso. Geralmente é onde se encontram os dispositivos de entrada e saída, como a interface do usuário, banco de dados, web browsers, aplicativos móveis, etc.
+- **Infraestrutura** (Infra-estrutura) - Terceira camada, onde se encontram as implementações concretas das interfaces definidas na camada de domínio. Ela é responsável por lidar com detalhes de tecnologia e é a única camada que pode depender de frameworks e bibliotecas. É aqui que você irá encontrar os repositórios e os *controllers*, por exemplo.
+- **External Interface** (Interface externa) - Camada mais externa, na qual usualmente não temos acesso. Geralmente é onde se encontram os dispositivos de entrada e saída, como a interface do usuário, banco de dados, web browsers, aplicativos móveis, etc. De forma geral, é aqui que residem os clientes da aplicação, o banco de dados, as APIs externas, etc.
 
 ## Para mais informações
 Se quiser mais informações sobre o projeto, por favor me contate em [https://www.doutorwaka.com/contact](https://www.doutorwaka.com/contact).
